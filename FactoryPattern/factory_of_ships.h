@@ -3,6 +3,7 @@
 #include "ship.h"
 #include <memory>
 
+
 //===================================================
 //	\function	createShip
 //	\brief  This is the factory function which defines an interface for object creation

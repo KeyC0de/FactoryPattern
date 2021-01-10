@@ -1,3 +1,4 @@
+#include <iostream>
 #include "factory_of_ships.h"
 
 
