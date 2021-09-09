@@ -125,7 +125,6 @@
     <ClCompile Include="ship.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="factory_of_ships.h" />
     <ClInclude Include="ship.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

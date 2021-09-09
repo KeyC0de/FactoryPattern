@@ -1,10 +1,10 @@
 #include <iostream>
-#include "factory_of_ships.h"
+#include "ship.h"
 
 
 int main()
 {
-	std::cout << "What type of ship? (U / R / B)\n";
+	std::cout << "What type of ship would you like? (U / R / B)\n";
 	char shipType;
 	std::cin >> shipType;
 	auto ship = createShip( shipType );
