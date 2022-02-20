@@ -9,7 +9,6 @@ int main()
 	std::cin >> shipType;
 	auto ship = createShip( shipType );
 
-	// if creation succeeded
 	if ( ship != nullptr )
 	{
 		ship->render();
@@ -23,6 +22,8 @@ int main()
 		std::cout << "Invalid input.\n";
 	}
 
-	std::system( "pause" );
-	return 0;
+#if defined _DEBUG && !defined NDEBUG
+	while ( !getchar() );
+#endif
+	return EXIT_SUCCESS;
 }

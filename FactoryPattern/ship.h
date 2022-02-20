@@ -4,16 +4,8 @@
 #include <memory>
 
 
-class Ship;
-
-//===================================================
-//	\function	createShip
-//	\brief  factory function
-//	\date	2020/11/09 19:51
-std::unique_ptr<Ship> createShip( char shipType );
-
 // common base class
-class Ship 
+class Ship
 {
 	std::string m_name;
 	double m_dmg;
@@ -34,9 +26,9 @@ public:
 };
 
 class UfoShip
-	: public Ship 
+	: public Ship
 {
-	std::string idcode = "100";
+	std::string m_id = "100";
 public:
 	UfoShip();
 	
@@ -46,7 +38,7 @@ public:
 };
 
 class RocketShip
-	: public Ship 
+	: public Ship
 {
 public:
 	RocketShip();
@@ -55,8 +47,15 @@ public:
 };
 
 class BigUfoShip
-	: public UfoShip 
+	: public UfoShip
 {
 public:
 	BigUfoShip();
 };
+
+
+//===================================================
+//	\function	createShip
+//	\brief  factory function
+//	\date	2020/11/09 19:51
+std::unique_ptr<Ship> createShip( char shipType );
